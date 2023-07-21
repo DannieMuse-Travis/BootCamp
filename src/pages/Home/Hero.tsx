@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ButtonProsp from '../../components/static/ButtonProsp'
 import Pix from "../../assets/lyrics.png"
+import wavy from "../../assets/wave.svg"
 
 const Hero = () => {
   return (
@@ -17,15 +18,19 @@ const Hero = () => {
                 </SmallText>
                 <But>
                 <ButtonProsp
-                text='Get started-it`s free'/>
+                text='Get started-it`s free'
+                padding='20px 20px'
+                />
                 </But>
                                 <Pic>
                 <Img src={Pix}/>
                  </Pic>
                 </Text>
-                
+               
             </Main>
+            < Vid src={wavy}/>
         </Container>
+
     </div>
   )
 }
@@ -34,15 +39,21 @@ export default Hero
 
 
     
+const Vid = styled.img`
+background-color:#3569A0;
+position: absolute;
+bottom: -10px;
 
+`
 const Pic = styled.div``
 
 const Img = styled.img`
 position: absolute;
-top: 50%;
-width:70%;
+top: 40%;
+height:60%;
 left: 16%;
-z-index:0 ;
+z-index:4 ;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `
 const But = styled.div`
     width:30%;
@@ -76,6 +87,7 @@ display:flex;
 
 `
 const Container = styled.div`
+position: relative;
 height:120vh;
 width:100%;
 background-color:#F7F5EF;

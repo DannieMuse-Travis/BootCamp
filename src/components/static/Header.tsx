@@ -14,7 +14,9 @@ const Header = () => {
             <Nav>Pricing</Nav>
             <Nav>Sign in</Nav>
             <ButtonProsp
-            text='sign up for free'/>
+            text='Sign Up for Free'
+            padding='8px 15px'
+            />
            </NavHolder>
 
         </Main>
@@ -28,7 +30,7 @@ const Nav = styled.div`
 display:flex;
 justify-content:space-between;
 margin-top:10px;
-margin: 10px;
+margin-right: 30px;
 margin-bottom:15px;`
 const NavHolder = styled.div`
 display:flex;
@@ -51,7 +53,7 @@ justify-content:space-between;
 align-items:center;`
 const Container = styled.div`
 width:100%;
-height:90%;
+height:95px;
 background-color:#F7F5EF;
 justify-content:center;
 display:flex;
