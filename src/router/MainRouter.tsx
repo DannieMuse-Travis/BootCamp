@@ -5,6 +5,10 @@ import HomeScreen from "../pages/HomeScreen"
 import SignIn from "../pages/Auth/SignIn"
 import Register from "../pages/Auth/Register"
 import SignLayout from "../components/layout/SignLayout"
+import Screen from "../pages/Home/Screen"
+import DashHeader from "../pages/Dashboard/DashHeader"
+import DashBoard from "../pages/Dashboard/DashBoard"
+import Community from "../pages/Home/Community"
 
 
 
@@ -29,7 +33,33 @@ export const MainRoute = createBrowserRouter([
             path: "/auth/signIn"
         }
         ]
-    }
+    },
+    {
+        path:"/library",
+        element:<Screen/>
+
+    },
+    {
+        path:"/community",
+        element:<Community/>
+
+    },
+    {
+        path:"/regsiter",
+        element:<Register/>
+
+    },
+    {
+        path:"/dashboard",
+        element:<SignLayout/>,
+        children:[
+            {
+                index: true,
+                element:<DashBoard/>, 
+            }, 
+        ]
+    }   
+    
 
    
 ])

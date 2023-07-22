@@ -118,8 +118,8 @@ width: 90%;
 const Container = styled.div`
 background-color:#F7F5EF;
 width:100%;
-min-height:90vh;
-padding-top: 50px;
+min-height:100vh;
+padding-top: 100px;
 display:flex;
 justify-content: center;
 align-items: center;

@@ -60,13 +60,14 @@ const SignIn = () => {
                         </Holder>
 
 
-                        <Button type="submit">Sign in</Button>
+                        <Button type="submit" to="/library" >Sign in</Button>
 
-                        <TextContent>
+                        <TextContent to="/register">
 
-                        already have an accout <span>Sign in</span>
+                        already have an accout <span
+                        >Sign in</span>
                         </TextContent>
-                        <Signed to="/Sign" >Sign Up</Signed>
+                        <Signed   to="/register">Sign Up</Signed>
                     
                 </Main>
             </Container>
@@ -84,7 +85,7 @@ text-decoration: none;
 `
 
 
-const TextContent = styled.div`
+const TextContent = styled(Link)`
 font-size: 13px;
 text-align: center;
 margin: 10px 0;
@@ -94,7 +95,7 @@ span{
 }
 `
 
-const Button = styled.button`
+const Button = styled(Link)`
 outline: none;
 border: 0;
 background-color:#3569a0;

@@ -1,17 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import CreativeButton from '../../components/static/CreativeButton'
-import Pic from "../../assets/discover-preview.png"
-const Screen = () => {
+
+const Community = () => {
   return (
     <div>
-        <Container>
+          <Container>
             <Main>
                 <Card>
-                    <BigText>Songcraft Discover</BigText>
-                    <SmallText>Find collaborators. Share music. Get feedback.</SmallText>
-                    <CreativeButton cc='white' title='get Early Access' bgs="#3569a0"/>
-                    <Img src={Pic}/>
+                    <BigText>Songcraft Syndicate</BigText>
+                    <SmallText>A blog for songwriters and musicians</SmallText>
+                   
+                    
                 </Card>
             </Main>
         </Container>
@@ -19,10 +18,9 @@ const Screen = () => {
   )
 }
 
-export default Screen
-const Img = styled.img`
-height:400px;
-width:1000px;`
+export default Community
+
+
 const Card = styled.div`
 display: flex;
 justify-content:center;
